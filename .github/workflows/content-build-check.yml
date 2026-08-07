@@ -1,0 +1,29 @@
+name: Content Build Check
+
+on:
+  push:
+    branches:
+      - feat-payload-deploy-webhook
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    env:
+      PAYLOAD_DOCS_URL:
+      ${{ secrets.PAYLOAD_DOCS_URL }}
+      PAYLOAD_BLOG_URL:
+      ${{ secrets.PAYLOAD_BLOG_URL }}
+      PAYLOAD_EXPORT_TOKEN:
+      ${{ secrets.PAYLOAD_EXPORT_TOKEN }}
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - run: npm install --global yarn@1.22.22
+      - run: yarn install --frozen-lockfile
+      - run: yarn build
