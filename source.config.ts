@@ -65,6 +65,4 @@ export const blogKo = createBlogCollection(contentEnabled ? 'content/ko/blog' : 
 export const blogEn = createBlogCollection(contentEnabled ? 'content/en/blog' : disabledBlogDir);
 export const blogEs = createBlogCollection(contentEnabled ? 'content/es/blog' : disabledBlogDir);
 
-export default defineConfig({
-  mdxOptions: {},
-});
+export default defineConfig({});

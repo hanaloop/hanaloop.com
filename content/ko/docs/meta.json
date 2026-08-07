@@ -1,7 +1,9 @@
 {
   "pages": [
-    "intro",
     "glossary",
+    "intro",
+    "test",
+    "test-doc",
     "x20_environment-general",
     "x30_platform",
     "x40_engineering"

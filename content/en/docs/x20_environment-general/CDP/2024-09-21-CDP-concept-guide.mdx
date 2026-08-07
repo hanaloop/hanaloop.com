@@ -1,163 +1,111 @@
 ---
+date: '2024-09-21T00:00:00.000Z'
+tags:
+  - 기후공시
+  - CDP
+image: /images/posting/environment-general/2022-12-14-cbam.jpg
 title: CDP 개념과 질의서 완벽 가이드
-subtitle: '환경 정보 공개부터 평가체계까지, CDP 보고의 모든 것'
-date: 2024-09-21T00:00:00.000Z
-description: >-
-  이 글에서는 글로벌 환경 정보 공개 프로그램인 CDP의 개념과 목적, 주요 공시 영역, 2024년 업데이트된 질의서 구조와 점수 체계를
-  다룹니다. 기업이 환경 정보를 투명하게 공개하고 투자자를 비롯한 이해관계자들에게 신뢰를 쌓기 위해 알아야 할 CDP 전반을 확인해보세요.
+authors: hykim
 summary: >-
   CDP는 전 세계 기업과 기관을 대상으로 기후 변화 대응, 산림 보호, 물 관리 등 환경 정보를 요구하고 이를 공개하는 비영리 기구로,
   기후·산림·수자원·플라스틱·생물다양성 등 다양한 영역에 대한 데이터를 수집·보고합니다. 2024년에는 모듈 통합을 통해 질의서 구조가
   간소화되고 IFRS S2, TNFD, ESRS 등 국제 기준과의 연계성이 강화되며, 이를 통해 기업들은 더욱 통합된 방식으로 공시 자료를
   준비할 수 있게 됩니다. CDP 점수는 D-에서 A까지 총 5단계로 구성되어 정보 공개 수준, 환경적 리스크 관리, 리더십 등을 종합적으로
   평가하며, 기업들은 사이트 및 가이드를 통해 필요한 질의서와 작성 방법을 확인함으로써 체계적인 보고서 작성이 가능합니다.
-image: /images/posting/environment-general/2022-12-14-cbam.jpg
+subtitle: '환경 정보 공개부터 평가체계까지, CDP 보고의 모든 것'
 imageHide: true
+description: >-
+  이 글에서는 글로벌 환경 정보 공개 프로그램인 CDP의 개념과 목적, 주요 공시 영역, 2024년 업데이트된 질의서 구조와 점수 체계를
+  다룹니다. 기업이 환경 정보를 투명하게 공개하고 투자자를 비롯한 이해관계자들에게 신뢰를 쌓기 위해 알아야 할 CDP 전반을 확인해보세요.
 imageCredits: null
-authors: hykim
-tags:
-  - 기후공시
-  - CDP
+payloadGenerated: true
 ---
 import CaptionedImage from "../../../src/components/theme/CaptionedImage";
 
-<CaptionedImage 
-  imageSrc="/images/blog/2024/CDP/CDP_0.png"
-  caption="COP27 logo"
-  containerClassName="" 
-/>
+<CaptionedImage imageSrc="/images/blog/2024/CDP/CDP_0.png" caption="COP27 logo" containerClassName="" imageClassName=""/>
 
 아래 내용을 비디오로 보시려면
 
-[* 4. 기후공시 표준 이해, GRI, CDP, IFRS S1,S2를 알아봅니다. ['24. 10. 09]](https://www.youtube.com/watch?v=fTroggDvgtc&t=1226)
+[\* 4. 기후공시 표준 이해, GRI, CDP, IFRS S1,S2를 알아봅니다. ['24. 10. 09]](https://www.youtube.com/watch?v=fTroggDvgtc&t=1226)
 
 ## CDP 개요
-<CaptionedImage
-  imageSrc="/images/blog/2024/CDP/CDP_1.png"
-  caption="COP27 logo"
-  containerClassName="" 
-  imageClassName="" isHero={true}
-/>
+
+<CaptionedImage imageSrc="/images/blog/2024/CDP/CDP_1.png" caption="COP27 logo" isHero containerClassName="" imageClassName=""/>
+
 전 세계 기업, 도시, 주정부, 지역 정부를 대상으로 기후 변화, 물 관리, 삼림 보호 등과 관련된 환경 정보 공개를 요구하는 비영리 기구입니다. CDP는 투자자와 기관들이 환경적 영향을 더 잘 이해하고 평가할 수 있도록 각 기관이 제공한 데이터를 공개하는 역할을 합니다. 2000년에 설립된 CDP는 탄소배출 정보 공개로시작했고 현재는 전 세계적으로 환경과 관련된 문제를 해결하는 것을 목표로 하고 있습니다.
 
-2023년도 기준으로 23,200개 이상 기업과 도시에서 CDP의 공시 시스템을 사용하고 있습니다.
-설문으로 점수를 메기는 공시 시스템입니다.
+2023년도 기준으로 23,200개 이상 기업과 도시에서 CDP의 공시 시스템을 사용하고 있습니다. 설문으로 점수를 메기는 공시 시스템입니다.
 
 ## CDP 3가지 주요 분야
-<CaptionedImage 
-  imageSrc="/images/blog/2024/CDP/CDP_2.png"
-  caption="COP27 logo"
-  containerClassName="h-[100px]" 
-  isHero={true}
-/>
 
-CDP는 주로 세 가지 주요 영역에서 데이터를 수집하고 보고합니다.
-기후 변화: 기업이 온실가스 배출량을 얼마나 줄이고 있는지, 에너지 효율성을 어떻게 개선하고 있는지 등의 정보를 요구합니다.
-산림 보호: 벌목, 농업, 목축업 등으로 인한 산림 훼손을 줄이기 위한 기업의 노력을 점검합니다.
-수자원 안정성: 기업의 물 사용량, 수자원 보호 전략, 물 부족 문제에 대한 대응 방식을 평가합니다.
-이와 함께 생물다양성와 플라스틱 부문 추가되었습니다.
+<CaptionedImage imageSrc="/images/blog/2024/CDP/CDP_2.png" caption="COP27 logo" isHero containerClassName="h-[100px]" imageClassName=""/>
+
+CDP는 주로 세 가지 주요 영역에서 데이터를 수집하고 보고합니다. 기후 변화: 기업이 온실가스 배출량을 얼마나 줄이고 있는지, 에너지 효율성을 어떻게 개선하고 있는지 등의 정보를 요구합니다. 산림 보호: 벌목, 농업, 목축업 등으로 인한 산림 훼손을 줄이기 위한 기업의 노력을 점검합니다. 수자원 안정성: 기업의 물 사용량, 수자원 보호 전략, 물 부족 문제에 대한 대응 방식을 평가합니다. 이와 함께 생물다양성와 플라스틱 부문 추가되었습니다.
 
 ## CDP 사용
-<CaptionedImage 
-  imageSrc="/images/blog/2024/CDP/CDP_3.png"
-  caption="COP27 logo"
-  containerClassName="" 
-  imageClassName="h-80" isHero={true}
-/>
+
+<CaptionedImage imageSrc="/images/blog/2024/CDP/CDP_3.png" caption="COP27 logo" isHero containerClassName="" imageClassName="h-80"/>
+
 CDP는 수집한 데이터를 바탕으로 매년 각 기업 및 기관의 환경 성과를 평가하고, 이를 공개해 투자자와 대중이 각 기업의 지속 가능성 노력에 대해 이해할 수 있도록 합니다. 이를 통해 기업이 기후 리스크를 보다 잘 관리하고, 환경 친화적인 비즈니스 모델로 전환하도록 장려합니다.
 
 CDP에서 공시된 데이터는 GRI보다 더 상세한 정량적인 데이터를 요구하고 있어서 기업들이 산업의 리스크를 관리하고 트렌드를 분석하며, 기후 변화 대응을 위한 국제적 협력과 정책 마련에도 중요한 참고 자료로 활용됩니다.
 
 ## CDP 보고 - 질의서
-<CaptionedImage 
-  imageSrc="/images/blog/2024/CDP/CDP_4.png"
-  caption="COP27 logo"
-  containerClassName="" 
-  imageClassName="h-80" isHero={true}
-/>
-질의서 형태입니다.
-전체 질의서가 있고, 최소 버전이 있습니다. 그것만 해도 CDP 등록이 가능합니다.
+
+<CaptionedImage imageSrc="/images/blog/2024/CDP/CDP_4.png" caption="COP27 logo" isHero containerClassName="" imageClassName="h-80"/>
+
+질의서 형태입니다. 전체 질의서가 있고, 최소 버전이 있습니다. 그것만 해도 CDP 등록이 가능합니다.
 
 ## CDP 2024 업데이트
-<CaptionedImage 
-  imageSrc="/images/blog/2024/CDP/CDP_5.png"
-  caption="COP27 logo"
-  containerClassName="" 
-  imageClassName="h-80" isHero={true}
-/>
-이전년도 CDP 보고를 작성한 분이 계시다면, 2024년도의 질의서 구조가 변경되었으니 참고하시기 바랍니다. 가장 큰 변화는 세가지 부문을 하나의 질의서로 통합한 것입니다, 각 부문에 같은 질문이 반복되는 부분이 있었는데 단순화 되었습니다.
-그 외 IFRS S2내용과 일치 그리고 자연 관련 재무 정보 공개 태스크포스(TNFD) 및 유럽 지속 가능성 보고 표준(ESRS)을 포함한 기타 표준 및 프레임워크와 부분적으로 일치합니다.
+
+<CaptionedImage imageSrc="/images/blog/2024/CDP/CDP_5.png" caption="COP27 logo" isHero containerClassName="" imageClassName="h-80"/>
+
+이전년도 CDP 보고를 작성한 분이 계시다면, 2024년도의 질의서 구조가 변경되었으니 참고하시기 바랍니다. 가장 큰 변화는 세가지 부문을 하나의 질의서로 통합한 것입니다, 각 부문에 같은 질문이 반복되는 부분이 있었는데 단순화 되었습니다. 그 외 IFRS S2내용과 일치 그리고 자연 관련 재무 정보 공개 태스크포스(TNFD) 및 유럽 지속 가능성 보고 표준(ESRS)을 포함한 기타 표준 및 프레임워크와 부분적으로 일치합니다.
 
 ## CDP 2024 갱신 기업 설문 구조
-<CaptionedImage 
-  imageSrc="/images/blog/2024/CDP/CDP_6.png"
-  caption="COP27 logo"
-  containerClassName="" 
-  imageClassName="h-80" isHero={true}
-/>
-CDP는 새로운15개의 모듈로 구성되어 있습니다.
-모듈 1 ~ 6은 기본 질문과 공통 모듈로 위험관리, 거버넌스와 전략을 포함하고 있습니다.
-모듈 7 ~ 11은 기후, 산림, 수자원, 플라스틱과 생물다양성에 관한 환경 지표가 있고
-나머지는 금융과 추가정보, 승인이 있습니다.
+
+<CaptionedImage imageSrc="/images/blog/2024/CDP/CDP_6.png" caption="COP27 logo" isHero containerClassName="" imageClassName="h-80"/>
+
+CDP는 새로운15개의 모듈로 구성되어 있습니다. 모듈 1 \~ 6은 기본 질문과 공통 모듈로 위험관리, 거버넌스와 전략을 포함하고 있습니다. 모듈 7 \~ 11은 기후, 산림, 수자원, 플라스틱과 생물다양성에 관한 환경 지표가 있고 나머지는 금융과 추가정보, 승인이 있습니다.
 
 앞에서 언급한 것처럼 통합된 새로운 질의서는 각 부문별 공통으로 사용 되는 질문이 통합되어 반복할 필요가 없습니다.
 
 ## CDP 점수
-<CaptionedImage 
-  imageSrc="/images/blog/2024/CDP/CDP_7.png"
-  caption="COP27 logo"
-  containerClassName="" 
-  imageClassName="h-80" isHero={true}
-/>
+
+<CaptionedImage imageSrc="/images/blog/2024/CDP/CDP_7.png" caption="COP27 logo" isHero containerClassName="" imageClassName="h-80"/>
+
 CDP점수는 기업이나 기관이 환경 데이터(기후 변화, 물 관리, 산림 보호 등)를 얼마나 투명하고 철저하게 공개하고 관리하는지를 평가하는 시스템입니다. CDP 점수는 D-에서 A까지의 5단계로 나뉘며, 기업의 환경 관리 성숙도와 리더십을 나타냅니다. 각 점수는 다음과 같은 단계를 반영합니다.
 
-D-에서 D: 공개수준입니다. 기업이 환경적 데이터를 기본적으로 공개하는 단계입니다.
-이 단계에서는 기후 변화, 물, 산림 보호 등의 주제에 대해 최소한의 정보를 제공하고 있다는 것을 의미합니다.
+D-에서 D: 공개수준입니다. 기업이 환경적 데이터를 기본적으로 공개하는 단계입니다. 이 단계에서는 기후 변화, 물, 산림 보호 등의 주제에 대해 최소한의 정보를 제공하고 있다는 것을 의미합니다.
 
 C-에서 C: 인식 수준입니다. 기업이 환경적 영향을 인식하고, 기후 변화나 환경 리스크가 자사의 비즈니스에 어떤 영향을 미치는지 이해하고 있는지를 보여줍니다. 이 단계에서는 기업이 해당 문제에 대한 이해를 높여가고 있음을 나타냅니다.
 
 B-에서 B: 관리 수준입니다. 기업이 환경적 리스크와 기회를 관리하기 위한 구체적인 절차와 정책을 실행하는 단계입니다. 이 단계에서는 기업이 온실가스 배출을 줄이기 위한 전략을 실질적으로 수행하고 있는지 평가합니다.
 
-A: 리더십 수준입니다. 최고 점수로, 기업이 환경 리더십을 발휘하고 있고, 지속 가능성 목표를 적극적으로 이행하며, 최선의 관행을 도입하고 있음을 의미합니다. 이 단계는 CDP가 인정하는 환경적 우수성을 보여줍니다.
-CDP 점수는 단순한 공개만을 넘어서, 기업이 환경 문제를 어떻게 인식하고, 관리하며, 리더십을 발휘하는지를 종합적으로 평가하는 중요한 지표입니다.
+A: 리더십 수준입니다. 최고 점수로, 기업이 환경 리더십을 발휘하고 있고, 지속 가능성 목표를 적극적으로 이행하며, 최선의 관행을 도입하고 있음을 의미합니다. 이 단계는 CDP가 인정하는 환경적 우수성을 보여줍니다. CDP 점수는 단순한 공개만을 넘어서, 기업이 환경 문제를 어떻게 인식하고, 관리하며, 리더십을 발휘하는지를 종합적으로 평가하는 중요한 지표입니다.
 
 ## CDP 질의서 보기
-<CaptionedImage 
-  imageSrc="/images/blog/2024/CDP/CDP_8.png"
-  caption="COP27 logo"
-  containerClassName="" 
-  imageClassName="h-80" isHero={true}
-/>
-질의서는 https://www.cdp.net/ko 사이트에 가시면 가입하지 않아도 “질문 및 설문지”를 클릭한 후 “Full corporate questionnaire and guidance” 로 가셔서 질의서 설정 양식을 완료하면 질의서를 받으실 수 있습니다.
-질의서에 대한 가이드를 “All guidance and materials”에서 받아보실 수 있습니다.
+
+<CaptionedImage imageSrc="/images/blog/2024/CDP/CDP_8.png" caption="COP27 logo" isHero containerClassName="" imageClassName="h-80"/>
+
+질의서는 https://www.cdp.net/ko 사이트에 가시면 가입하지 않아도 “질문 및 설문지”를 클릭한 후 “Full corporate questionnaire and guidance” 로 가셔서 질의서 설정 양식을 완료하면 질의서를 받으실 수 있습니다. 질의서에 대한 가이드를 “All guidance and materials”에서 받아보실 수 있습니다.
 
 ## CDP 질의서 보기 - 모듈 7: 기후변화
-<CaptionedImage 
-  imageSrc="/images/blog/2024/CDP/CDP_9.png"
-  caption="COP27 logo"
-  containerClassName="" 
-  imageClassName="h-80" isHero={true}
-/>
+
+<CaptionedImage imageSrc="/images/blog/2024/CDP/CDP_9.png" caption="COP27 logo" isHero containerClassName="" imageClassName="h-80"/>
+
 질의서 질문과 내용은 영문으로 되어 있으며 답변 작성을 영어로 하셔야 합니다.
 
 ## CDP 질의서 가이드 보기 - 모듈 7: 기후변화
-<CaptionedImage 
-  imageSrc="/images/blog/2024/CDP/CDP_10.png"
-  caption="COP27 logo"
-  containerClassName="" 
-  imageClassName="h-80" isHero={true}
-/>
-예로 “모듈 7: 기후변화”를 보겠습니다.
-질문은 “귀사의 총 Scope 1 배출량(metric tons CO2e)을 입력하십시오.” 라는 질문에 각 연도별 scope 1 총 배출량을 산정 방법론과 함께 보고하시면 됩니다.
+
+<CaptionedImage imageSrc="/images/blog/2024/CDP/CDP_10.png" caption="COP27 logo" isHero containerClassName="" imageClassName="h-80"/>
+
+예로 “모듈 7: 기후변화”를 보겠습니다. 질문은 “귀사의 총 Scope 1 배출량(metric tons CO2e)을 입력하십시오.” 라는 질문에 각 연도별 scope 1 총 배출량을 산정 방법론과 함께 보고하시면 됩니다.
 
 ## 2024 CDP 평가방법론 - 모듈 7: 기후변화
-<CaptionedImage 
-  imageSrc="/images/blog/2024/CDP/CDP_11.png"
-  caption="COP27 logo"
-  containerClassName="" 
-  imageClassName="h-80" isHero={true}
-/>
-질의서 가이드를 보시면 요구하는 데이터에 구체적인 설명을 하고 있습니다.
-예를 들어 “총 Scope 1 배출량”은 gross 량이므로 음수가 될 수 없다는 내용 등을 참조하여 작성하시면 됩니다.
+
+<CaptionedImage imageSrc="/images/blog/2024/CDP/CDP_11.png" caption="COP27 logo" isHero containerClassName="" imageClassName="h-80"/>
+
+질의서 가이드를 보시면 요구하는 데이터에 구체적인 설명을 하고 있습니다. 예를 들어 “총 Scope 1 배출량”은 gross 량이므로 음수가 될 수 없다는 내용 등을 참조하여 작성하시면 됩니다.
 
 마지막으로 한국사회책임투자포럼 KoSIF 사이트에 가시면 평가방법론 문서를 받아보실 수 있습니다.

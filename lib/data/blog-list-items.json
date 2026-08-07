@@ -189,7 +189,7 @@
       "title": "하나루프 2023 EU CBAM 대응 탄소다배출산업 기업 대상 온실가스 관리 현황 진단 및 관리 체계 구축 지원",
       "dateText": "2023년 11월 2일",
       "author": "Hana",
-      "thumbnail": "/site/home/hero-bg-main.png",
+      "thumbnail": "/images/blog/20231101-HanaLoop-CBAM-program.png",
       "href": "/blog/2023/20231102-cbam-assessment_program"
     },
     {
@@ -213,7 +213,7 @@
       "title": "08월 13일 기후규제대응 역량 강화세미나",
       "dateText": "2023년 8월 13일",
       "author": "Hana",
-      "thumbnail": "/site/home/hero-bg-main.png",
+      "thumbnail": "/images/blog/20230831-climateregulation-seminar.jpg",
       "href": "/blog/2023/20230813-climateregulation-seminar"
     },
     {
@@ -247,6 +247,14 @@
       "author": "Young-Suk Ahn Park",
       "thumbnail": "/site/home/hero-bg-main.png",
       "href": "/blog/2023/20230403-byucksan"
+    },
+    {
+      "id": "blog-31-2026-test",
+      "title": "테스트",
+      "dateText": "",
+      "author": "HanaLoop",
+      "thumbnail": "/api/media/file/%EC%A0%9C%EB%AA%A9%20%EC%97%86%EC%9D%8C.png",
+      "href": "/blog/2026/test"
     }
   ],
   "en": [
@@ -423,7 +431,7 @@
       "title": "HanaLoop: 2023 EU CBAM Capacity Building Program for SMB",
       "dateText": "Nov 2, 2023",
       "author": "Hana",
-      "thumbnail": "/site/home/hero-bg-main.png",
+      "thumbnail": "/images/blog/20231101-HanaLoop-CBAM-program.png",
       "href": "/en/blog/2023/20231102-cbam-assessment_program"
     },
     {
@@ -447,7 +455,7 @@
       "title": "August 13, Climate Regulation Capacity Building Seminar",
       "dateText": "Aug 13, 2023",
       "author": "Hana",
-      "thumbnail": "/site/home/hero-bg-main.png",
+      "thumbnail": "/images/blog/20230831-climateregulation-seminar.jpg",
       "href": "/en/blog/2023/20230813-climateregulation-seminar"
     },
     {
@@ -657,7 +665,7 @@
       "title": "하나루프 2023 EU CBAM 대응 탄소다배출산업 기업 대상 온실가스 관리 현황 진단 및 관리 체계 구축 지원",
       "dateText": "2 nov 2023",
       "author": "Hana",
-      "thumbnail": "/site/home/hero-bg-main.png",
+      "thumbnail": "/images/blog/20231101-HanaLoop-CBAM-program.png",
       "href": "/es/blog/2023/20231102-cbam-assessment_program"
     },
     {
@@ -681,7 +689,7 @@
       "title": "08월 13일 기후규제대응 역량 강화세미나",
       "dateText": "13 ago 2023",
       "author": "Hana",
-      "thumbnail": "/site/home/hero-bg-main.png",
+      "thumbnail": "/images/blog/20230831-climateregulation-seminar.jpg",
       "href": "/es/blog/2023/20230813-climateregulation-seminar"
     },
     {
