@@ -3,7 +3,7 @@ name: Content Build Check
 on:
   push:
     branches:
-      - feat-payload-deploy-webhook
+      - feat/payload-docs-sync
 
 jobs:
   build:
