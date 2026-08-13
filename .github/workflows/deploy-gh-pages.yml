@@ -34,12 +34,16 @@ jobs:
         uses: actions/configure-pages@v5
 
       - name: Install dependencies
-        run: yarn install 
+        run: yarn install
 
       - name: Build
         run: yarn build
         # env:
         #   WEB_PATH_PREFIX: /${{ github.event.repository.name }}
+        env:
+          PAYLOAD_DOCS_URL: ${{ secrets.PAYLOAD_DOCS_URL }}
+          PAYLOAD_BLOG_URL: ${{ secrets.PAYLOAD_BLOG_URL }}
+          VERCEL_AUTOMATION_BYPASS_SECRET: ${{ secrets.VERCEL_AUTOMATION_BYPASS_SECRET }}
 
       - name: Disable Jekyll
         run: touch out/.nojekyll
