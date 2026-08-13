@@ -99,24 +99,26 @@ function restoreEscapedCodeFences(mdx) {
 }
 
 function normalizeBlockMdx(mdx) {
-  return mdx
-    // Legacy MDX sometimes prefixes a component with an invisible zero-width
-    // space. MDX then treats the component as inline content and puts its
-    // rendered <div> inside a paragraph, causing a hydration error.
-    .replaceAll("\u200B", "")
-    // These components render block-level markup, so they must always occupy
-    // their own MDX block even when legacy content placed them after text.
-    .replace(
-      /<CaptionedImage\b[\s\S]*?\/>/g,
-      // Lexical escapes underscores when it serializes an MDX attribute. In an
-      // image URL that backslash becomes part of the requested path, so remove
-      // the escape while emitting this known component.
-      (component) => `\n\n${component.trim().replaceAll("\\_", "_")}\n\n`,
-    )
-    .replace(
-      /<Callout\b[^>]*>[\s\S]*?<\/Callout>/g,
-      (component) => `\n\n${component.trim()}\n\n`,
-    );
+  return (
+    mdx
+      // Legacy MDX sometimes prefixes a component with an invisible zero-width
+      // space. MDX then treats the component as inline content and puts its
+      // rendered <div> inside a paragraph, causing a hydration error.
+      .replaceAll("\u200B", "")
+      // These components render block-level markup, so they must always occupy
+      // their own MDX block even when legacy content placed them after text.
+      .replace(
+        /<CaptionedImage\b[\s\S]*?\/>/g,
+        // Lexical escapes underscores when it serializes an MDX attribute. In an
+        // image URL that backslash becomes part of the requested path, so remove
+        // the escape while emitting this known component.
+        (component) => `\n\n${component.trim().replaceAll("\\_", "_")}\n\n`,
+      )
+      .replace(
+        /<Callout\b[^>]*>[\s\S]*?<\/Callout>/g,
+        (component) => `\n\n${component.trim()}\n\n`,
+      )
+  );
 }
 
 async function pruneGeneratedDocuments(directory, expectedPaths) {
@@ -147,9 +149,15 @@ async function getDocuments(locale) {
   url.searchParams.set("locale", locale);
 
   const response = await fetch(url, {
-    headers: exportToken
-      ? { Authorization: `Bearer ${exportToken}` }
-      : undefined,
+    headers: {
+      ...(exportToken ? { Authorization: `Berear ${exportToken}` } : {}),
+      ...(process.env.VERCEL_AUTOMATION_BYPASS_SECRET
+        ? {
+            "x-vercel-protection-bypass":
+              process.env.VERCEL_AUTOMATION_BYPASS_SECRET,
+          }
+        : {}),
+    },
   });
 
   if (!response.ok) {

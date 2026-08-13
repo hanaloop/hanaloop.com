@@ -12,6 +12,7 @@ jobs:
       PAYLOAD_DOCS_URL: ${{ secrets.PAYLOAD_DOCS_URL }}
       PAYLOAD_BLOG_URL: ${{ secrets.PAYLOAD_BLOG_URL }}
       PAYLOAD_EXPORT_TOKEN: ${{ secrets.PAYLOAD_EXPORT_TOKEN }}
+      VERCEL_AUTOMATION_BYPASS_SECRET: ${{ secrets.VERCEL_AUTOMATION_BYPASS_SECRET }}
 
     steps:
       - uses: actions/checkout@v4

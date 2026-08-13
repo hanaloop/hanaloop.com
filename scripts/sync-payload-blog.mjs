@@ -177,10 +177,14 @@ async function getPosts(locale) {
   url.searchParams.set("locale", locale);
 
   const response = await fetch(url, {
-    headers: exportToken
-      ? { Authorization: `Bearer ${exportToken}` }
-      : undefined,
-  });
+      headers: {
+        ...(exportToken ? { Authorization: `Berear ${exportToken}` } : {}),
+        ...(process.env.VERCEL_AUTOMATION_BYPASS_SECRET ? {
+          'x-vercel-protection-bypass': process.env.VERCEL_AUTOMATION_BYPASS_SECRET
+        } : {}),
+      }
+    }
+  );
 
   if (!response.ok) {
     throw new Error(
