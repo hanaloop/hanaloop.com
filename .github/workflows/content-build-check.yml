@@ -8,7 +8,6 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
-
     env:
       PAYLOAD_DOCS_URL: ${{ secrets.PAYLOAD_DOCS_URL }}
       PAYLOAD_BLOG_URL: ${{ secrets.PAYLOAD_BLOG_URL }}
