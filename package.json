@@ -4,7 +4,9 @@
     "private": true,
     "scripts": {
         "normalize:content": "node scripts/normalize-content.mjs",
-        "prepare:content": "yarn normalize:content && yarn prepare:docs && yarn prepare:blog-list && yarn prepare:insight-list && fumadocs-mdx",
+        "sync:payload-docs": "node scripts/sync-payload-docs.mjs",
+        "sync:payload-blog": "node scripts/sync-payload-blog.mjs",
+        "prepare:content": "yarn sync:payload-docs && yarn sync:payload-blog && yarn normalize:content && yarn prepare:docs && yarn prepare:blog-list && yarn prepare:insight-list && fumadocs-mdx",
         "prepare:blog-list": "node scripts/generate-blog-list-json.mjs",
         "prepare:insight-list": "node scripts/generate-insight-list-json.mjs",
         "dev": "yarn prepare:content && next dev -H 0.0.0.0 -p 3000",
